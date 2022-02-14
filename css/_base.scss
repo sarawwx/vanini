@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+// palette colors
+$gray: rgb(196, 196, 196);
+$black: rgb(58, 52, 52);
+$white: rgb(255, 255, 255);
+$green-dark: rgb(35, 200, 129);
+$green-light: rgb(115, 234, 120);
+
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+
+
+body {
+    background-color: rgb(201, 201, 201);
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+
+    .logo{
+        font-size: 60px;
+        font-family: 'Monoton', cursive;
+        color: $green-dark;
+    }
+}
