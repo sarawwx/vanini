@@ -1,31 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
-// palette colors
-$gray: rgb(196, 196, 196);
+// ******* palette colors ********* //
+$gray: rgb(243, 239, 239);
 $black: rgb(58, 52, 52);
 $white: rgb(255, 255, 255);
 $green-dark: rgb(35, 200, 129);
 $green-light: rgb(115, 234, 120);
 
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: border-box;
+//ERRORS:
+// *tive que colocar "background-color: $gray" em todas as classes dentro 
+//  de .menu pois não estava sendo aplicada em todas apesar do encadeamento
 
-
-body {
-    background-color: rgb(201, 201, 201);
+* {
+    background-color: $white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.center{
+.menu{
     display: flex;
-    flex-wrap: wrap;
     max-width: 1100px;
+    flex-wrap: wrap;
     margin: 0 auto;
-    padding: 0 2%;
+    padding: 0 1%;
+    //background-color: $gray;
 
     .logo{
         font-size: 60px;
         font-family: 'Monoton', cursive;
         color: $green-dark;
+        width: 50%;
+        //background-color: $gray;
+    }
+    .menu-links{
+        padding-top: 30px;
+        width: 50%;
+        text-align: right;
+        list-style:none;
+        
+        //background-color: $gray;
+
+        li{
+            display: inline;
+        }
+        a{
+            text-decoration: none;
+            color: $black;
+            font-weight: bold;
+            margin-right: 22px;
+            //background-color: $gray;
+        }
+    }
+    a.active, a:hover{
+        color: $green-dark;
+        transition: .5s;
     }
 }
+
+
+
+
+// .checkbtn{
+//     font-size: 30px;
+//     color: black;
+//     float: right;
+//     line-height: 80px;
+//     margin-right: 40px;
+//     cursor: pointer;
+//     display: none;
+// }
+// #check{
+//     display: none;
+// }
+
+// @media(max-width: 952px){
+//     .logo{
+//         font-size: 30px;
+//         padding-left: 50px;
+//     }
+//     .menu-links{
+//         font-size: 16px;
+//     }
+// }
+// @media(max-width: 858px){
+//     .checkbtn{
+//         display: block;
+//     }
+//     .menu-links{
+//         position: fixed;
+//         width: 100%;
+//         height: 100vh;
+//         background: $gray;
+//         text-align: center;
+//         transform: all .5s;
+//     }
+//     .menu{
+//         display: block;
+//         margin: 50px  0;
+//         line-height: 30px;
+//     }
+//     a{
+//         font-size: 16px;
+//     }
+
+// }

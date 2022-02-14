@@ -1,22 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
-body {
-  background-color: #c9c9c9;
+* {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.center {
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1100px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 2%;
+  padding: 0 1%;
 }
 
-.center .logo {
+.menu .logo {
   font-size: 60px;
   font-family: 'Monoton', cursive;
   color: #23c881;
+  width: 50%;
+}
+
+.menu .menu-links {
+  padding-top: 30px;
+  width: 50%;
+  text-align: right;
+  list-style: none;
+}
+
+.menu .menu-links li {
+  display: inline;
+}
+
+.menu .menu-links a {
+  text-decoration: none;
+  color: #3a3434;
+  font-weight: bold;
+  margin-right: 22px;
+}
+
+.menu a.active, .menu a:hover {
+  color: #23c881;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 /*# sourceMappingURL=main.css.map */
