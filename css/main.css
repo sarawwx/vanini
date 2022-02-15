@@ -9,20 +9,35 @@
 
 header {
   height: 80px;
+  background-color: #f3efef;
 }
 
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 30px;
-  background-color: #f3efef;
 }
 
-.menu .logo {
+@media only screen and (max-width: 938px) {
+  .menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 20px;
+  }
+}
+
+.logo {
   cursor: pointer;
   font-size: 50px;
   font-family: "Monoton", cursive;
@@ -32,18 +47,13 @@ header {
 }
 
 @media only screen and (max-width: 938px) {
-  .menu .logo {
-    cursor: pointer;
-    font-size: 70px;
-    font-family: "Monoton", cursive;
-    color: #23c881;
-    padding-right: 0;
-    text-align: center;
+  .logo {
+    font-size: 50px;
+    text-align: left;
   }
 }
 
-.menu .menu-links {
-  overflow: hidden;
+.menu-links {
   padding-top: 30px;
   width: 50%;
   text-align: right;
@@ -51,7 +61,7 @@ header {
 }
 
 @media only screen and (max-width: 938px) {
-  .menu .menu-links {
+  .menu-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -59,11 +69,11 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
-    margin: 5;
-  }
-  .menu .menu-links li {
-    float: none;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    font-size: 14px;
+    padding: 14px 0 0;
   }
 }
 
@@ -87,7 +97,24 @@ a:hover {
 }
 
 .intro {
-  margin-top: 80px;
+  width: 100%;
+  margin: auto;
+  margin-top: 200px;
   text-align: center;
+}
+
+.intro h1 {
+  font-size: 60px;
+}
+
+.intro p {
+  font-size: 40px;
+}
+
+img {
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  width: 100%;
+  opacity: 0.6;
 }
 /*# sourceMappingURL=main.css.map */
