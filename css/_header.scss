@@ -1,0 +1,65 @@
+header {
+    height: 80px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 30px;
+    background-color: $gray;
+
+    .logo {
+        cursor: pointer;
+        font-size: 50px;
+        font-family: "Monoton", cursive;
+        color: $green-dark;
+        padding-right: 38%;
+        padding-left: 2%;
+
+        @media only screen and (max-width: 938px) {
+            cursor: pointer;
+            font-size: 70px;
+            font-family: "Monoton", cursive;
+            color: $green-dark;
+            padding-right: 0;
+            text-align: center;
+        }
+    }
+    .menu-links {
+        overflow: hidden;
+        padding-top: 30px;
+        width: 50%;
+        text-align: right;
+        list-style: none;
+
+        @media only screen and (max-width: 938px) {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 5;
+
+            li {
+                float: none;
+                //padding-top: 10px;
+            }
+        }
+    }
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $black;
+    font-weight: bold;
+    margin-right: 22px;
+}
+a.active,
+a:hover {
+    color: $green-dark;
+    transition: 0.5s;
+}

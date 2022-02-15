@@ -7,68 +7,10 @@ $white: rgb(255, 255, 255);
 $green-dark: rgb(35, 200, 129);
 $green-light: rgb(115, 234, 120);
 
-//ERRORS:
-// *tive que colocar "background-color: $gray" em todas as classes dentro 
-//  de .menu pois não estava sendo aplicada em todas apesar do encadeamento
 
 * {
-    background-color: $white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.menu{
-    display: flex;
-    max-width: 1100px;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 0 1%;
-    //background-color: $gray;
-
-    .logo{
-        cursor: pointer;
-        font-size: 60px;
-        font-family: 'Monoton', cursive;
-        color: $green-dark;
-        width: 50%;
-        //background-color: $gray;
-    }
-    .menu-links{
-        padding-top: 30px;
-        width: 50%;
-        text-align: right;
-        list-style:none;
-        
-        //background-color: $gray;
-        
-        li{
-            display: inline;
-        }
-        a{
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $black;
-            font-weight: bold;
-            margin-right: 22px;
-            //background-color: $gray;
-        }
-    }
-    a.active, a:hover{
-        color: $green-dark;
-        transition: .5s;
-    }
-}
-
-
-
-// .menu:focus .menu-links,
-// .menu:focus-within .menu-links,
-// .menu:hover .menu-links{
-//     visibility: visible;
-//     opacity: 1;
-//     z-index: 1;
-//     transform: translateY(0);
-//     transition-delay: 0s, 0s, 0.3s;
-// }
