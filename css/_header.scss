@@ -16,6 +16,13 @@ header {
         flex-direction: row;
         padding: 0 20px;
     }
+    @media only screen and (max-width: 460px) {
+        justify-content: space-between;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0 20px;
+    }
 }
 
 .logo {
@@ -24,12 +31,10 @@ header {
     font-family: "Monoton", cursive;
     color: $green-dark;
     padding-right: 38%;
-    padding-left: 2%;
 
-    @media only screen and (max-width: 938px) {
+    @media only screen and (max-width: 460px) {
         font-size: 50px;
-        // padding: 5px 0 0;
-        text-align: left;
+        padding: 0;
     }
 }
 
@@ -44,7 +49,6 @@ header {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        //text-align: center;
         font-size: 14px;
         padding: 14px 0 0;
     }
@@ -60,6 +64,10 @@ a {
     color: $black;
     font-weight: bold;
     margin-right: 22px;
+
+    @media only screen and (max-width: 938px) {
+        margin-right: 0;
+    }
 }
 a.active,
 a:hover {
