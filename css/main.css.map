@@ -8,7 +8,8 @@
         "_intro.scss",
         "_carousel.scss",
         "_about.scss",
-        "_services.scss"
+        "_services.scss",
+        "_forms.scss"
     ],
     "names": [],
     "file": "main.css"
