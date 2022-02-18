@@ -1,6 +1,6 @@
 .about {
     display: flex;
-    flex-direction: row;
+    //flex-direction:column;
 }
 
 .who-are {
@@ -20,7 +20,6 @@
 .pillars {
     display: flex;
     flex-direction: column;
-
     width: 50%;
     margin: 20px;
 
@@ -31,25 +30,33 @@
         margin: 0;
     }
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
-        li{
-            margin-right: 30px;
-        }
-        .icon-a {
-
-            text-decoration: none;
-            color: $black;
-            font-weight: bold;
-            margin-right: 40px;
-        }
+    img {
+        display: block;
+        margin: 0 auto 15px;
+        max-width: 64px;
     }
 
-}
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+        align-items: stretch;
 
+        li {
+            max-width: 70px;
+            margin: 8%;
+            text-align: center;
+        }
+
+        a.icon-a {
+            text-decoration: none;
+            color: $black;
+            margin-top: 10%;
+          // justify-content:center;
+        }
+    }
+}
 
 
 
