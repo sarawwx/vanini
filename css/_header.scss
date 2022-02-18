@@ -1,84 +1,35 @@
 header {
+    width: 100%;
     height: 80px;
-    background-color: $gray;
+    background: $gray;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .menu {
     display: flex;
-    //flex-wrap: wrap;
-    margin: 0;
-    padding: 0 30px;
-
-    
-    @media only screen and (max-width: 938px) {
-        justify-content: space-between;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        padding: 0 20px;
-    }
-    @media only screen and (max-width: 460px) {
-        justify-content: space-between;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        padding: 0 20px;
-    }
-}
-// .menu-btn{
-//     position: absolute;
-//     top:30px;
-//     right: 30px;
-//     width: 40px;
-//     cursor: pointer;
-// }
-
-.logo {
-    cursor: pointer;
-    font-size: 50px;
-    font-family: "Monoton", cursive;
-    color: $green-dark;
-    padding-right: 38%;
-
-    @media only screen and (max-width: 460px) {
-        font-size: 50px;
-        padding: 0;
-    }
-}
-
-.menu-links {
-    padding-top: 30px;
-    width: 50%;
-    text-align: right;
     list-style: none;
+    flex-wrap: wrap;
 
-    @media only screen and (max-width: 938px) {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        font-size: 14px;
-        padding: 14px 0 0;
-
-        // .mobile-menu{
-        //     margin-top: 0px;
-        // }
-    }
 }
 
-li {
-    display: inline;
-}
-
+.li-menu,
 .a-menu {
+    color: $black;
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
-    color: $black;
-    font-weight: bold;
-    margin-right: 22px;
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+}
 
-    @media only screen and (max-width: 938px) {
-        margin-right: 0;
-    }
+.logo {
+    font-size: 45px;
+    font-family: "Monoton", cursive;
+    color: $green-dark;
 }
 a.active,
 a:hover {

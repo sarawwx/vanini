@@ -1,4 +1,5 @@
 .about {
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
@@ -32,7 +33,7 @@
     }
 }
 
-ul {
+.ul-about {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -47,14 +48,14 @@ ul {
         max-width: 64px;
     }
 
-    a.icon-a {
+    .icon-a {
         text-decoration: none;
         color: $black;
         margin-top: 10%;
     }
 }
 
-li {
+.li-about {
     max-width: 70px;
     margin: 20px;
     text-align: center;
@@ -64,9 +65,20 @@ li {
 }
 
 
-//     .divider{
-//         justify-content: flex-end;
-//         border-left: 1px solid #ccc;
-//         margin: 0 10px;
-//         height: 125px;
-//     }
+@media only screen and (max-width: 720px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+
+        .who-are,
+        .pillars {
+            width: 100%;
+            padding: 20px 30px;
+        }
+
+        .ul-about{
+            width: 100%;
+           // justify-content: center;
+        }
+    }
+}

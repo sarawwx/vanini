@@ -1,8 +1,8 @@
 .services {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 20px;
+    width: 90%;
+    margin: 40px 20px;
     
     .line {
         width: 200px;
@@ -10,17 +10,21 @@
         background: $green-light;
         margin: 0;
     }
-}
-.images-service{
-    display: flex;
-    flex-wrap: wrap;
-   // width: 80%;
-    justify-content:baseline;
-
-    .image-service{
-        display: block;
-        max-width: 250px;
-        min-height: 200px;
-        margin: 20px;
+    .col-service{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+        justify-content:center;
+        // align-items:stretch;
+        
+        .image-service{
+            display: block;
+            max-width: 50%;
+            // min-height: 200px;
+            padding: 25px;
+            flex-basis: 100%;
+            box-sizing: border-box;
+        }
     }
 }
