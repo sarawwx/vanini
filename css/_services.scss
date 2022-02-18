@@ -14,13 +14,13 @@
 .images-service{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    //justify-content:baseline;
+   // width: 80%;
+    justify-content:baseline;
 
     .image-service{
         display: block;
         max-width: 250px;
         min-height: 200px;
-        padding: 0.5%;
+        margin: 20px;
     }
 }

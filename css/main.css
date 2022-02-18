@@ -212,6 +212,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .who-are {
@@ -243,6 +247,9 @@ a:hover {
           flex-direction: column;
   width: 50%;
   margin: 20px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .pillars .line {
@@ -252,38 +259,49 @@ a:hover {
   margin: 0;
 }
 
-.pillars img {
-  display: block;
-  margin: 0 auto 15px;
-  max-width: 64px;
-}
-
-.pillars ul {
+ul {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  width: 70%;
+  margin: 10px auto;
 }
 
-.pillars ul li {
-  max-width: 70px;
-  margin: 8%;
-  text-align: center;
+ul .about-i {
+  display: block;
+  margin: 0 auto 15px;
+  max-width: 64px;
 }
 
-.pillars ul a.icon-a {
+ul a.icon-a {
   text-decoration: none;
   color: #3a3434;
   margin-top: 10%;
+}
+
+li {
+  max-width: 70px;
+  margin: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .services {
@@ -311,13 +329,15 @@ a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
 }
 
 .images-service .image-service {
   display: block;
   max-width: 250px;
   min-height: 200px;
-  padding: 0.5%;
+  margin: 20px;
 }
 /*# sourceMappingURL=main.css.map */

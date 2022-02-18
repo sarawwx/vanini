@@ -1,6 +1,6 @@
 .about {
     display: flex;
-    //flex-direction:column;
+    flex-direction: row;
 }
 
 .who-are {
@@ -22,6 +22,7 @@
     flex-direction: column;
     width: 50%;
     margin: 20px;
+    align-items: baseline;
 
     .line {
         width: 180px;
@@ -29,35 +30,38 @@
         background: $green-light;
         margin: 0;
     }
+}
 
-    img {
+ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 10px auto;
+
+    .about-i {
         display: block;
         margin: 0 auto 15px;
         max-width: 64px;
     }
 
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        flex-direction: row;
-        align-items: stretch;
-
-        li {
-            max-width: 70px;
-            margin: 8%;
-            text-align: center;
-        }
-
-        a.icon-a {
-            text-decoration: none;
-            color: $black;
-            margin-top: 10%;
-          // justify-content:center;
-        }
+    a.icon-a {
+        text-decoration: none;
+        color: $black;
+        margin-top: 10%;
     }
 }
 
+li {
+    max-width: 70px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 
 //     .divider{
