@@ -1,0 +1,61 @@
+.about {
+    display: flex;
+    flex-direction: row;
+}
+
+.who-are {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px;
+
+    .line {
+        width: 180px;
+        height: 4px;
+        background: $green-light;
+        margin: 0;
+    }
+}
+
+.pillars {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    margin: 20px;
+
+    .line {
+        width: 180px;
+        height: 4px;
+        background: $green-light;
+        margin: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        li{
+            margin-right: 30px;
+        }
+        .icon-a {
+
+            text-decoration: none;
+            color: $black;
+            font-weight: bold;
+            margin-right: 40px;
+        }
+    }
+
+}
+
+
+
+
+//     .divider{
+//         justify-content: flex-end;
+//         border-left: 1px solid #ccc;
+//         margin: 0 10px;
+//         height: 125px;
+//     }
