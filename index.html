@@ -86,7 +86,7 @@
     </section>
 
     <section class="container-contact">
-        <form>
+        <form onsubmit="sendEmail(); reset(); return false;">
             <h2>Fale conosco</h2>
             <div class="line"></div>
             <br>
@@ -104,10 +104,35 @@
             <h3>Nosso email</h3>
             <p>contato@vanini.com</p>
         </div>
-
     </section>
 
+    <section class="footer">
+        <div class="social">
+            <a href="#" ><img src="/img/facebook-icon.png" alt="" class="icon-s"></a>
+            <a href="#" ><img src="/img/whatsapp-icon.png" alt="" class="icon-s"></a>
+            <a href="#" ><img src="/img/email-icon.png" alt="" class="icon-s"></a>
+            <a href="#" ><img src="/img/insta-icon.png" alt="" class="icon-s"></a>
+        </div>
+        <p class="copyright">Copyright © | All Rights Reserved</p>
+    </section>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host: "smtp.yourisp.com",
+                Username: "username",
+                Password: "password",
+                To: 'them@website.com',
+                From: "you@isp.com",
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+        // to edit this yep
+    </script>
 </body>
 
 </html>
