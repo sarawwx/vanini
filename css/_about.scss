@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    padding: 2vw 4vw;
 }
 
 .who-are {
@@ -11,7 +12,7 @@
     margin: 20px;
 
     .line {
-        width: 180px;
+        width: 250px;
         height: 4px;
         background: $green-light;
         margin: 0;
@@ -23,10 +24,10 @@
     flex-direction: column;
     width: 50%;
     margin: 20px;
-    align-items: baseline;
+    align-items:flex-start;
 
     .line {
-        width: 180px;
+        width: 250px;
         height: 4px;
         background: $green-light;
         margin: 0;
@@ -36,10 +37,10 @@
 .ul-about {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
     margin: 10px auto;
 
     .about-i {
@@ -57,7 +58,7 @@
 
 .li-about {
     max-width: 70px;
-    margin: 20px;
+    margin: 20px 20px 30px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -76,9 +77,9 @@
             padding: 20px 30px;
         }
 
-        .ul-about{
+        .ul-about {
             width: 100%;
-           // justify-content: center;
+            // justify-content: center;
         }
     }
 }

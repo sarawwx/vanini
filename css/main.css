@@ -13,6 +13,22 @@ body {
   height: 100vh;
 }
 
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  font-size: 20px;
+}
+
 header {
   width: 100%;
   height: 90px;
@@ -157,6 +173,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 2vw 4vw;
 }
 
 .who-are {
@@ -172,7 +189,7 @@ a:hover {
 }
 
 .who-are .line {
-  width: 180px;
+  width: 250px;
   height: 4px;
   background: #73ea78;
   margin: 0;
@@ -188,13 +205,13 @@ a:hover {
           flex-direction: column;
   width: 50%;
   margin: 20px;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .pillars .line {
-  width: 180px;
+  width: 250px;
   height: 4px;
   background: #73ea78;
   margin: 0;
@@ -208,15 +225,14 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 70%;
+  width: 100%;
   margin: 10px auto;
 }
 
@@ -234,7 +250,7 @@ a:hover {
 
 .li-about {
   max-width: 70px;
-  margin: 20px;
+  margin: 20px 20px 30px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,11 +290,12 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 90%;
-  margin: 40px 20px;
+  margin: 100px 20px 20px;
+  padding: 2vw 4vw;
 }
 
 .services .line {
-  width: 200px;
+  width: 280px;
   height: 4px;
   background: #73ea78;
   margin: 0;
@@ -308,5 +325,88 @@ a:hover {
       flex-basis: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.container-contact {
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 80px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-contact .line {
+  width: 250px;
+  height: 4px;
+  background: #73ea78;
+  margin: 0;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2vw 4vw;
+  width: 50%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-right: 10%;
+}
+
+form input,
+form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #f3efef;
+  font-size: 20px;
+}
+
+form button {
+  padding: 15px;
+  background: #23c881;
+  color: #3a3434;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.info-contact {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.info-contact h3 {
+  margin-top: 30px;
+}
+
+.info-contact p {
+  margin-top: 0.5%;
 }
 /*# sourceMappingURL=main.css.map */
