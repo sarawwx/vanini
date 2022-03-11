@@ -66,6 +66,7 @@ a {
 }
 
 .logo {
+  width: 50%;
   font-size: 60px;
   font-family: "Monoton", cursive;
   color: #23c881;
@@ -80,6 +81,13 @@ a:hover {
 }
 
 @media only screen and (max-width: 680px) {
+  header {
+    padding: 0;
+  }
+  .logo {
+    margin: auto;
+    margin-left: 20px;
+  }
   .header a {
     float: none;
     display: block;
@@ -87,6 +95,15 @@ a:hover {
   }
   .header-right {
     float: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -108,11 +125,11 @@ a:hover {
 }
 
 .text-intro .title {
-  font-size: 7vmin;
+  font-size: 10vmin;
 }
 
 .text-intro p {
-  font-size: 4vmin;
+  font-size: 5vmin;
 }
 
 @media only screen and (max-width: 938px) {

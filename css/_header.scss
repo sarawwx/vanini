@@ -54,6 +54,7 @@
 // }
 
 .logo {
+    width: 50%;
     font-size: 60px;
     font-family: "Monoton", cursive;
     color: $green-dark;
@@ -67,9 +68,13 @@ a:hover {
 }
 
 @media only screen and (max-width: 680px) {
-    // .header {
-    //     justify-content: space-around;
-    // }
+    header{
+        padding: 0;
+    }
+    .logo {
+        margin: auto;
+        margin-left: 20px;
+    }
 
     .header a {
         float: none;
@@ -79,6 +84,8 @@ a:hover {
 
     .header-right {
         float: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
-
 }
